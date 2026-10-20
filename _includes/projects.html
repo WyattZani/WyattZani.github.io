@@ -5,9 +5,9 @@
   {% for p in site.data.projects %}
   <article class="project" id="{{ p.id }}">
     <div class="project-meta">
-      {% if p.status %}<p class="project-status">{{ p.status }}</p>{% endif %}
-      {% if p.context %}<p class="project-context">{{ p.context }}</p>{% endif %}
-      {% if p.skills %}
+      {% if p.status and p.status != "" %}<p class="project-status">{{ p.status }}</p>{% endif %}
+      {% if p.context and p.context != "" %}<p class="project-context">{{ p.context }}</p>{% endif %}
+      {% if p.skills and p.skills.size > 0 %}
       <ul class="skills" aria-label="Skills">
         {% for s in p.skills %}<li>{{ s }}</li>{% endfor %}
       </ul>
@@ -18,8 +18,8 @@
       {% if p.image and p.image != "" %}
       <img class="project-image" src="{{ p.image | relative_url }}" alt="{{ p.image_alt }}" loading="lazy">
       {% endif %}
-      <p>{{ p.summary }}</p>
-      {% if p.details %}
+      {% if p.summary and p.summary != "" %}<p>{{ p.summary }}</p>{% endif %}
+      {% if p.details and p.details.size > 0 %}
       <ul class="details">
         {% for d in p.details %}<li>{{ d }}</li>{% endfor %}
       </ul>

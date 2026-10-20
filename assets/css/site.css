@@ -268,3 +268,6 @@ h3 {
   .project-meta { order: 2; }
   .project-body { order: 1; }
 }
+
+/* Hide paragraphs left empty so they don't leave gaps */
+.section-body p:empty { display: none; }

@@ -19,7 +19,7 @@
   </svg>
   <div class="hero-inner">
     <h1 class="hero-name">{{ site.username }}</h1>
-    <p class="hero-title">{{ site.user_title }}</p>
+    {% if site.user_title != "" %}<p class="hero-title">{{ site.user_title }}</p>{% endif %}
     <nav class="hero-nav" aria-label="Sections">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>

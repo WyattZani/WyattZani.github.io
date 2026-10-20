@@ -1,49 +1,43 @@
 # Your projects. Each entry starting with "- id:" is one project on the site,
-# shown in this order. To add a project, copy an entry and edit it.
+# shown in this order. Empty fields ("" or []) are hidden on the site.
 #
 # Fields:
-#   status, context, summary: short text (wrap in quotes if it contains a colon)
-#   details: bullet points (delete the whole "details:" block to hide them)
-#   skills:  tags shown beside the project
-#   image:   optional, e.g. /assets/img/mic-array.jpg (upload the photo to assets/img/)
+#   status:   e.g. "In progress" or "Complete"
+#   context:  e.g. "Personal project" or "Course project"
+#   summary:  a sentence or two about the project (keep it in quotes)
+#   details:  bullet points, one per line starting with "- "
+#   skills:   tags shown beside the project, one per line starting with "- "
+#   image:    optional photo, e.g. "/assets/img/mic-array.jpg" (upload it to assets/img/)
 #   image_alt: describe the photo for screen readers
 #   link, link_text: optional, e.g. a GitHub repo or write-up
+#
+# Example of filled-in lists:
+#   details:
+#     - "First point"
+#     - "Second point"
+#   skills:
+#     - "KiCad"
+#     - "C++"
 
 - id: mic-array
   title: Sound localization microphone array
-  status: In progress
-  context: Personal project
-  summary: A four-microphone array that finds and follows a person speaking as they move around a room. The localization runs entirely on the board instead of being streamed to a computer.
-  details:
-    - Four Infineon IM73A135V01 MEMS microphones in a square layout, with the signal chain designed around the frequency range of normal speech.
-    - An op-amp preamp for each microphone with a gain of 21, built and working.
-    - A TI ADS131M04 four-channel ADC with an ESP32 supplying its clock, so all four microphones are sampled together.
-    - C++ firmware on the ESP32 combines the four channels to estimate where the sound is coming from.
-    - Schematic drawn in KiCad, split into a preamp page and an ADC page, with design decisions recorded in a running technical report.
-  skills:
-    - Analog front ends
-    - Mixed-signal design
-    - KiCad
-    - ESP32
-    - C++
+  status: ""
+  context: ""
+  summary: ""
+  details: []
+  skills: []
   image: ""
   image_alt: ""
   link: ""
   link_text: ""
 
-- id: ner-bms
-  title: Battery management system, Northeastern Electric Racing
-  status: Ongoing
-  context: Student race team
-  summary: Northeastern Electric Racing designs and builds a Formula-style electric race car. I work on the battery management system, the electronics that monitor and protect the car's high-voltage battery pack.
-  details:
-    - Tested the team's physical BMS circuit boards.
-    - Integrated the battery management system into the vehicle.
-    # Add specifics here: what you tested, which tools you used, problems you found and fixed.
-  skills:
-    - PCB testing
-    - Battery systems
-    - Vehicle integration
+- id: museum-of-science
+  title: Museum of Science exhibit
+  status: ""
+  context: ""
+  summary: ""
+  details: []
+  skills: []
   image: ""
   image_alt: ""
   link: ""
@@ -51,17 +45,11 @@
 
 - id: vw-bus
   title: 1977 Volkswagen Bus electric conversion
-  status: Complete
-  context: Personal project
-  summary: I converted a 1977 Volkswagen Bus to electric drive, designing the powertrain myself.
-  # details:
-  #   - Motor and controller you chose, and why
-  #   - Battery pack voltage, capacity and layout
-  #   - Charging setup and how the old systems were adapted
-  skills:
-    - Powertrain design
-    - EV systems
-    - System integration
+  status: ""
+  context: ""
+  summary: ""
+  details: []
+  skills: []
   image: ""
   image_alt: ""
   link: ""

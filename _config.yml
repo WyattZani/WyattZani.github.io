@@ -6,7 +6,7 @@ url: "https://wyattzani.github.io"
 
 # About you (used in the header, footer and contact section)
 username: Wyatt Zani
-user_title: Electrical engineering student at Northeastern University, working on analog circuits, embedded systems and electric vehicles.
+user_title: "" # one line shown under your name
 location: Boston, MA
 
 # Contact links. Any value left as "" is hidden on the site.
