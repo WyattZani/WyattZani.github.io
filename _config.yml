@@ -2,7 +2,7 @@
 title: A Porfolio of Wyatt Zani
 description: Wyatt Zani is an Electrical Engineering undergrad at Northeastern University
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://wyattzani.github.io/" # 
 
 # User settings
 username: Wyatt Zani
