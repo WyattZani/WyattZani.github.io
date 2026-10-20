@@ -1,7 +1,7 @@
 # Site settings
 title: A Porfolio of Wyatt Zani
 description: Wyatt Zani is an Electrical Engineering undergrad at Northeastern University
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
+baseurl: "/particle" # the subpath of your site, e.g. /blog
 url: "https://wyattzani.github.io/" # 
 
 # User settings
