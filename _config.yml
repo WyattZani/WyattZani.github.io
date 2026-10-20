@@ -9,6 +9,10 @@ username: Wyatt Zani
 user_title: "" # one line shown under your name
 location: Boston, MA
 
+# Banner photo. Upload it to assets/img/ with this name (or change the path).
+banner_image: "/assets/img/banner.jpg"
+banner_credit: "" # e.g. "Photo: Jane Doe, CC BY-SA 4.0" if the photo isn't yours
+
 # Contact links. Any value left as "" is hidden on the site.
 email: "zani.w@northeastern.edu"
 email_personal: "wyattzani@gmail.com"
