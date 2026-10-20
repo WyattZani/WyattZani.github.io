@@ -1,20 +1,18 @@
 # Site settings
-title: A Porfolio of Wyatt Zani
+title: Portfolio of Wyatt Zani
 description: Wyatt Zani is an Electrical Engineering undergrad at Northeastern University
-baseurl: "/particle" # the subpath of your site, e.g. /blog
-url: "https://wyattzani.github.io/" # 
+baseurl: "" # leave empty for a username.github.io site
+url: "https://wyattzani.github.io"
 
 # User settings
 username: Wyatt Zani
-user_description: Wyatt Zani is an electrical engineering undergraduate at Northeastern University. Boston, MA. 
-user_title: Software Developer
-email: School email: zani.w@northeastern.edu General email: wyattzani@gmail.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
+user_description: Wyatt Zani is an electrical engineering undergraduate at Northeastern University. Boston, MA.
+user_title: Electrical Engineering Student
+email: "zani.w@northeastern.edu"
+github_username: WyattZani
 
 # Google-analytics
 google-analytics:
   id: ""
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ['package.json', 'src', 'node_modules', 'gulpfile.js', 'yarn.lock']
