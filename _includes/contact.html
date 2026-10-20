@@ -1,0 +1,13 @@
+<div class="section-head">
+  <h2>Contact</h2>
+</div>
+<div class="section-body">
+  <p class="lead">The best way to reach me is by email.</p>
+  <dl class="contact-list">
+    {% if site.email != "" %}<dt>School</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd>{% endif %}
+    {% if site.email_personal != "" %}<dt>Personal</dt><dd><a href="mailto:{{ site.email_personal }}">{{ site.email_personal }}</a></dd>{% endif %}
+    {% if site.github_username != "" %}<dt>GitHub</dt><dd><a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a></dd>{% endif %}
+    {% if site.linkedin_url != "" %}<dt>LinkedIn</dt><dd><a href="{{ site.linkedin_url }}">{{ site.linkedin_url | remove: "https://" | remove: "www." }}</a></dd>{% endif %}
+    {% if site.resume_file != "" %}<dt>Résumé</dt><dd><a href="{{ site.resume_file | relative_url }}">Download PDF</a></dd>{% endif %}
+  </dl>
+</div>

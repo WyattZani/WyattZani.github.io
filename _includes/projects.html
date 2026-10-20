@@ -1,29 +1,33 @@
-<div class="user-details">
-  <h1> Featured Projects </h1>
+<div class="section-head">
+  <h2>Projects</h2>
 </div>
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents-right">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
-  </div>
+<div class="section-body">
+  {% for p in site.data.projects %}
+  <article class="project" id="{{ p.id }}">
+    <div class="project-meta">
+      {% if p.status %}<p class="project-status">{{ p.status }}</p>{% endif %}
+      {% if p.context %}<p class="project-context">{{ p.context }}</p>{% endif %}
+      {% if p.skills %}
+      <ul class="skills" aria-label="Skills">
+        {% for s in p.skills %}<li>{{ s }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    <div class="project-body">
+      <h3>{{ p.title }}</h3>
+      {% if p.image and p.image != "" %}
+      <img class="project-image" src="{{ p.image | relative_url }}" alt="{{ p.image_alt }}" loading="lazy">
+      {% endif %}
+      <p>{{ p.summary }}</p>
+      {% if p.details %}
+      <ul class="details">
+        {% for d in p.details %}<li>{{ d }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+      {% if p.link and p.link != "" %}
+      <a class="project-link" href="{{ p.link }}">{{ p.link_text | default: "Read more" }}</a>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
 </div>

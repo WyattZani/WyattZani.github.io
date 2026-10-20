@@ -1,19 +1,30 @@
-<div id="particles-js">
-  <div class="header">
-      <h1>
-        <span class="site-title">{{site.username}}</span>
-        <span class="site-description">{{site.user_title}}</span>
-      </h1>
-      <div class="header-icons">
-        <a aria-label="Send email" href="#"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My Twitter" target="_blank" href="#"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-        <a aria-label="My Google Plus" target="_blank" href="#"><i class="icon fa fa-google-plus" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="_blank" href="#"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-      </div>
-      <div class="header-links">
-        <a class="link" href="#about" data-scroll>About Me</a>
-        <a class="link" href="#projects" data-scroll>Projects</a>
-      </div>
+<header class="hero">
+  <svg class="traces" viewBox="0 0 1200 640" preserveAspectRatio="xMaxYMid slice" aria-hidden="true" focusable="false">
+    <g class="trace-lines">
+      <path pathLength="1" d="M1200 60 H920 L860 120 V200 L820 240 H600"/>
+      <path pathLength="1" d="M1200 150 H1040 L990 200 V470 L1030 510 V640"/>
+      <path pathLength="1" d="M1200 300 H1110 L1080 330 V560 L1040 600 H960"/>
+      <path pathLength="1" d="M520 0 V70 L560 110 H700"/>
+      <path pathLength="1" d="M1200 470 H1160 L1130 500 V640"/>
+      <path pathLength="1" d="M1200 230 H1130 L1100 200 V140 L1060 100 H1000"/>
+    </g>
+    <g class="trace-pads">
+      <circle cx="600" cy="240" r="9"/>
+      <circle cx="700" cy="110" r="9"/>
+      <circle cx="960" cy="600" r="9"/>
+      <circle cx="1000" cy="100" r="9"/>
+      <rect x="1016" y="626" width="28" height="14"/>
+      <rect x="1116" y="626" width="28" height="14"/>
+    </g>
+  </svg>
+  <div class="hero-inner">
+    <h1 class="hero-name">{{ site.username }}</h1>
+    <p class="hero-title">{{ site.user_title }}</p>
+    <nav class="hero-nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      {% if site.resume_file != "" %}<a href="{{ site.resume_file | relative_url }}">Résumé (PDF)</a>{% endif %}
+    </nav>
   </div>
-  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
-</div>
+</header>

@@ -1,18 +1,23 @@
 # Site settings
-title: Portfolio of Wyatt Zani
-description: Wyatt Zani is an Electrical Engineering undergrad at Northeastern University
+title: Wyatt Zani | Electrical Engineering Portfolio
+description: Wyatt Zani is an electrical engineering student at Northeastern University focused on analog and embedded hardware.
 baseurl: "" # leave empty for a username.github.io site
 url: "https://wyattzani.github.io"
 
-# User settings
+# About you (used in the header, footer and contact section)
 username: Wyatt Zani
-user_description: Wyatt Zani is an electrical engineering undergraduate at Northeastern University. Boston, MA.
-user_title: Electrical Engineering Student
-email: "zani.w@northeastern.edu"
-github_username: WyattZani
+user_title: Electrical engineering student at Northeastern University, working on analog circuits, embedded systems and electric vehicles.
+location: Boston, MA
 
-# Google-analytics
+# Contact links. Any value left as "" is hidden on the site.
+email: "zani.w@northeastern.edu"
+email_personal: "wyattzani@gmail.com"
+github_username: WyattZani
+linkedin_url: "" # e.g. "https://www.linkedin.com/in/your-name"
+resume_file: ""  # upload your PDF to assets/, then set e.g. "/assets/Wyatt_Zani_Resume.pdf"
+
+# Google Analytics (optional)
 google-analytics:
   id: ""
 
-exclude: ['package.json', 'src', 'node_modules', 'gulpfile.js', 'yarn.lock']
+exclude: ['package.json', 'src', 'node_modules', 'gulpfile.js', 'yarn.lock', 'particle.jpg']
