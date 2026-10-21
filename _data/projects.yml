@@ -21,9 +21,9 @@
 
 - id: mic-array
   title: Sound localization microphone array
-  status: ""
+  status: "In Progress"
   context: ""
-  summary: ""
+  summary: "The spatial localization project uses a four-microphone square array to actively track a human speaker. Using omnidirectional microphones, preamplifier circuits, an analog-to-digital converter (ADC), and a microcontroller (MCU), the system can locate a speaker within a room with high precision using time difference of arrival (TDoA)."
   details: []
   skills: []
   image: ""
@@ -35,7 +35,7 @@
   title: Museum of Science exhibit
   status: ""
   context: ""
-  summary: ""
+  summary: "For the northeastern First Year Engineering Expo, my team and I developed a game system to teach about sustainability. Individually, I specialized"
   details: []
   skills: []
   image: ""
