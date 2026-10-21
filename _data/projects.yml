@@ -26,8 +26,8 @@
   summary: ""
   details: []
   skills: []
-  image: ""
-  image_alt: ""
+  image: "/assets/img/mic-array-schematic.png"
+  image_alt: "KiCad schematic of the four-microphone array, showing the preamp circuits, the ADS131M04 ADC and the ESP32"
   link: ""
   link_text: ""
 
@@ -38,8 +38,8 @@
   summary: ""
   details: []
   skills: []
-  image: ""
-  image_alt: ""
+  image: "/assets/img/museum-of-science.jpg"
+  image_alt: "Interactive smoothie shop exhibit with a lit map of the U.S., plane, truck and train buttons, and a laptop showing freshness and eco scores"
   link: ""
   link_text: ""
 
@@ -50,7 +50,7 @@
   summary: ""
   details: []
   skills: []
-  image: ""
-  image_alt: ""
+  image: "/assets/img/vw-bus.jpg"
+  image_alt: "Working underneath the 1977 Volkswagen Bus in a garage"
   link: ""
   link_text: ""

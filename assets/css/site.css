@@ -184,7 +184,8 @@ h3 {
 
 .project-body h3 { font-size: 1.4rem; }
 .project-body p { margin: 0 0 1rem; }
-.project-image { margin: 0.75rem 0 1.25rem; border-radius: 3px; }
+.project-image { display: block; margin: 0.75rem 0 1.25rem; }
+.project-image img { width: 100%; border-radius: 3px; border: 1px solid var(--line); }
 .details { padding-left: 1.2rem; margin: 0 0 1rem; }
 .details li { margin-bottom: 0.45rem; }
 .project-link { font-weight: 600; }

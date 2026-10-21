@@ -16,7 +16,9 @@
     <div class="project-body">
       <h3>{{ p.title }}</h3>
       {% if p.image and p.image != "" %}
-      <img class="project-image" src="{{ p.image | relative_url }}" alt="{{ p.image_alt }}" loading="lazy">
+      <a class="project-image" href="{{ p.image | relative_url }}" title="Open full size">
+        <img src="{{ p.image | relative_url }}" alt="{{ p.image_alt }}" loading="lazy">
+      </a>
       {% endif %}
       {% if p.summary and p.summary != "" %}<p>{{ p.summary }}</p>{% endif %}
       {% if p.details and p.details.size > 0 %}
