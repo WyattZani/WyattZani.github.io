@@ -21,9 +21,9 @@
 
 - id: mic-array
   title: Sound localization microphone array
-  status: ""
+  status: "In Progress"
   context: ""
-  summary: ""
+  summary: "I developed a spatial localization system that uses a four-microphone square array to actively track a human speaker. Using omnidirectional microphones, preamplifier circuits, an analog-to-digital converter (ADC), and a microcontroller (MCU), the system can locate a speaker within a room with high precision using time difference of arrival (TDoA)."
   details: []
   skills: []
   image: "/assets/img/mic-array-schematic.png"
@@ -35,7 +35,7 @@
   title: Museum of Science exhibit
   status: ""
   context: ""
-  summary: ""
+  summary: "For the northeastern First Year Engineering Expo, my team and I developed a game system to teach about sustainability. Working through the entire engineering design process, I was a key contributor in ideation, iteration, and final construction. Individually, I specialized in Arduino wiring, electronic soldering, and final assembly. "
   details: []
   skills: []
   image: "/assets/img/museum-of-science.jpg"
@@ -47,7 +47,7 @@
   title: 1977 Volkswagen Bus electric conversion
   status: ""
   context: ""
-  summary: ""
+  summary: "I converted a 1977 VW Combi Bus to electric. Using 10 Tesla battery modules and a NetGain 9 motor, I created a new electric powertrain for my vehicle. Additional support systems were made, including a custom 12V system to power various 'house' original parts and cooling systems for the batteries."
   details: []
   skills: []
   image: "/assets/img/vw-bus.jpg"
