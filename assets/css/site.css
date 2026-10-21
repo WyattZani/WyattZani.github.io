@@ -153,23 +153,39 @@ h3 {
 }
 
 /* Projects */
+.section-body:has(.project) { max-width: 50rem; }
 .project {
-  display: grid;
-  grid-template-columns: 11rem minmax(0, 1fr);
-  gap: 1rem 2rem;
   padding: 2rem 0;
   border-top: 1px solid var(--line);
 }
 .project:first-child { padding-top: 0; border-top: 0; }
+.project.has-image {
+  display: grid;
+  grid-template-columns: 15rem minmax(0, 1fr);
+  gap: 1.75rem;
+  align-items: start;
+}
 
-.project-meta p { margin: 0; font-size: 0.95rem; }
-.project-status { font-weight: 600; }
-.project-context { color: var(--muted); }
+.project-image { display: block; }
+.project-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1px solid var(--line);
+}
+.project-image:hover img { opacity: 0.9; }
+
+.project-body h3 { font-size: 1.35rem; margin-bottom: 0.35rem; }
+.project-body p { margin: 0 0 1rem; }
+.project-body > :last-child { margin-bottom: 0; }
+.project-meta { font-size: 0.95rem; color: var(--muted); }
+.project-status { font-weight: 600; color: var(--ink); }
 
 .skills {
   list-style: none;
   padding: 0;
-  margin: 0.9rem 0 0;
+  margin: 0 0 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
@@ -182,10 +198,6 @@ h3 {
   border-radius: 3px;
 }
 
-.project-body h3 { font-size: 1.4rem; }
-.project-body p { margin: 0 0 1rem; }
-.project-image { display: block; margin: 0.75rem 0 1.25rem; }
-.project-image img { width: 100%; border-radius: 3px; border: 1px solid var(--line); }
 .details { padding-left: 1.2rem; margin: 0 0 1rem; }
 .details li { margin-bottom: 0.45rem; }
 .project-link { font-weight: 600; }
@@ -213,9 +225,8 @@ h3 {
 /* ---------- Small screens ---------- */
 @media (max-width: 820px) {
   .section { grid-template-columns: 1fr; gap: 1.25rem; }
-  .project { grid-template-columns: 1fr; gap: 0.75rem; }
-  .project-meta { order: 2; }
-  .project-body { order: 1; }
+  .project.has-image { grid-template-columns: 1fr; gap: 1rem; }
+  .project-image { max-width: 24rem; }
 }
 @media (max-width: 520px) {
   .topnav-name { display: none; }

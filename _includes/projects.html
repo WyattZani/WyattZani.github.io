@@ -3,27 +3,30 @@
 </div>
 <div class="section-body">
   {% for p in site.data.projects %}
-  <article class="project" id="{{ p.id }}">
-    <div class="project-meta">
-      {% if p.status and p.status != "" %}<p class="project-status">{{ p.status }}</p>{% endif %}
-      {% if p.context and p.context != "" %}<p class="project-context">{{ p.context }}</p>{% endif %}
-      {% if p.skills and p.skills.size > 0 %}
-      <ul class="skills" aria-label="Skills">
-        {% for s in p.skills %}<li>{{ s }}</li>{% endfor %}
-      </ul>
-      {% endif %}
-    </div>
+  <article class="project{% if p.image and p.image != "" %} has-image{% endif %}" id="{{ p.id }}">
+    {% if p.image and p.image != "" %}
+    <a class="project-image" href="{{ p.image | relative_url }}" title="Open full size">
+      <img src="{{ p.image | relative_url }}" alt="{{ p.image_alt }}" loading="lazy">
+    </a>
+    {% endif %}
     <div class="project-body">
       <h3>{{ p.title }}</h3>
-      {% if p.image and p.image != "" %}
-      <a class="project-image" href="{{ p.image | relative_url }}" title="Open full size">
-        <img src="{{ p.image | relative_url }}" alt="{{ p.image_alt }}" loading="lazy">
-      </a>
+      {% if p.status != "" or p.context != "" %}
+      <p class="project-meta">
+        {% if p.status and p.status != "" %}<span class="project-status">{{ p.status }}</span>{% endif %}
+        {% if p.status != "" and p.context != "" %}<span aria-hidden="true"> · </span>{% endif %}
+        {% if p.context and p.context != "" %}<span class="project-context">{{ p.context }}</span>{% endif %}
+      </p>
       {% endif %}
       {% if p.summary and p.summary != "" %}<p>{{ p.summary }}</p>{% endif %}
       {% if p.details and p.details.size > 0 %}
       <ul class="details">
         {% for d in p.details %}<li>{{ d }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+      {% if p.skills and p.skills.size > 0 %}
+      <ul class="skills" aria-label="Skills">
+        {% for s in p.skills %}<li>{{ s }}</li>{% endfor %}
       </ul>
       {% endif %}
       {% if p.link and p.link != "" %}
