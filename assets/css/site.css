@@ -231,3 +231,16 @@ h3 {
 @media (max-width: 520px) {
   .topnav-name { display: none; }
 }
+
+/* Headshot under the About heading */
+.headshot {
+  width: 100%;
+  max-width: 10rem;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-top: 1.25rem;
+}
+@media (max-width: 820px) {
+  .headshot { max-width: 8rem; margin-top: 1rem; }
+}
