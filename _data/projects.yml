@@ -28,8 +28,8 @@
   skills: []
   image: "/assets/img/mic-array-schematic.png"
   image_alt: "KiCad schematic of the four-microphone array, showing the preamp circuits, the ADS131M04 ADC and the ESP32"
-  link: ""
-  link_text: ""
+  link: "/assets/docs/working-technical-report.pdf"
+  link_text: "Working Technical report"
 
 - id: museum-of-science
   title: Museum of Science exhibit
@@ -52,5 +52,5 @@
   skills: []
   image: "/assets/img/vw-bus.jpg"
   image_alt: "Working underneath the 1977 Volkswagen Bus in a garage"
-  link: ""
-  link_text: ""
+  link: "https://www.wpri.com/news/street-stories/its-electric-portsmouth-father-son-duo-convert-1977-vw-bus/"
+  link_text: "Link to local news publication covering the project"
