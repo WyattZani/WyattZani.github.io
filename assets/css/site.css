@@ -244,3 +244,14 @@ h3 {
 @media (max-width: 820px) {
   .headshot { max-width: 8rem; margin-top: 1rem; }
 }
+
+/* About: heading across the top, photo below it, text beside the photo */
+#about .section-head { display: contents; }
+#about { row-gap: 1.5rem; }
+#about h2 { grid-column: 1 / -1; grid-row: 1; }
+#about .headshot { grid-column: 1; grid-row: 2; margin-top: 0; max-width: 12rem; }
+#about .section-body { grid-column: 2; grid-row: 2; }
+@media (max-width: 820px) {
+  #about h2, #about .headshot, #about .section-body { grid-column: 1; grid-row: auto; }
+  #about .headshot { max-width: 9rem; }
+}
