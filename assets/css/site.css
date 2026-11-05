@@ -371,3 +371,15 @@ body.lb-open { overflow: hidden; }
   .lightbox { padding: 3.5rem 0.5rem; }
   .lb-prev, .lb-next { top: auto; bottom: 1rem; transform: none; }
 }
+
+/* Text-only steps and figure stacks on project pages */
+.build-step.text-only .step-text { grid-column: 1 / -1; max-width: 44rem; }
+.step-media .schematic + .schematic { margin-top: 1.25rem; }
+
+/* References list */
+.references { padding: 2.5rem 0 0; border-top: 1px solid var(--line); }
+.references h2 { font-family: var(--serif); font-weight: 600; font-size: 1.6rem; margin: 0 0 1rem; }
+.references ol { padding-left: 1.4rem; margin: 0; max-width: 50rem; font-size: 0.92rem; color: var(--muted); }
+.references li { margin-bottom: 0.6rem; overflow-wrap: anywhere; }
+.references cite { font-style: italic; }
+.schematic .thumb img { max-height: 26rem; margin: 0 auto; }

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" font-family="Helvetica, Arial, sans-serif">
+  <rect width="520" height="420" fill="#ffffff"/>
+  <!-- square -->
+  <rect x="140" y="80" width="240" height="240" fill="none" stroke="#1a1d21" stroke-width="2.5"/>
+  <!-- diagonal -->
+  <line x1="140" y1="320" x2="380" y2="80" stroke="#a8132a" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="282" y="184" fill="#a8132a" font-size="17" font-weight="600" text-anchor="middle" transform="rotate(-45 282 184)">5 cm diagonal</text>
+  <!-- side dimension -->
+  <line x1="140" y1="352" x2="380" y2="352" stroke="#5a6068" stroke-width="1.5"/>
+  <line x1="140" y1="344" x2="140" y2="360" stroke="#5a6068" stroke-width="1.5"/>
+  <line x1="380" y1="344" x2="380" y2="360" stroke="#5a6068" stroke-width="1.5"/>
+  <text x="260" y="382" fill="#5a6068" font-size="16" text-anchor="middle">side = 5 / √2 ≈ 3.54 cm</text>
+  <!-- mics -->
+  <g fill="#ffffff" stroke="#1a1d21" stroke-width="2.5">
+    <circle cx="140" cy="80" r="17"/><circle cx="380" cy="80" r="17"/>
+    <circle cx="380" cy="320" r="17"/><circle cx="140" cy="320" r="17"/>
+  </g>
+  <g fill="#1a1d21" font-size="15" font-weight="700" text-anchor="middle">
+    <text x="140" y="85">M1</text><text x="380" y="85">M2</text>
+    <text x="380" y="325">M3</text><text x="140" y="325">M4</text>
+  </g>
+  <text x="260" y="44" fill="#1a1d21" font-size="18" font-weight="600" text-anchor="middle">Four-microphone square array (top view)</text>
+</svg>
