@@ -5,7 +5,7 @@ project_id: vw-bus
 permalink: /projects/vw-bus/
 ---
 
-<!-- INTRO: type your intro paragraph inside the <p> tags below. -->
+<!-- Intro paragraph: type it inside the <p> tags below. -->
 <div class="page-intro">
   <p class="lead"></p>
 </div>
