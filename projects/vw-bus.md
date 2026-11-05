@@ -16,7 +16,7 @@ permalink: /projects/vw-bus/
   <h2>Car overview</h2>
   <div class="step-media">
     <div class="photo-group">
-      <a class="thumb" href="/assets/img/vw-bus/01-car-overview.jpg"><img src="/assets/img/vw-bus/01-car-overview.jpg" alt="The finished light-blue 1977 Volkswagen Bus parked on a street" loading="lazy"></a>
+      <a class="thumb" href="/assets/img/vw-bus/01-car-overview.jpg"><img src="/assets/img/vw-bus/01-car-overview.jpg" alt="The light-blue and white 1977 Volkswagen Bus parked in the sun" loading="lazy"></a>
     </div>
   </div>
   <div class="step-text">
@@ -72,12 +72,7 @@ permalink: /projects/vw-bus/
   <div class="step-media">
     <div class="photo-group">
       <a class="thumb" href="/assets/img/vw-bus/04-support-systems-1.jpg"><img src="/assets/img/vw-bus/04-support-systems-1.jpg" alt="Battery management system boards mounted in the bus with their sense wiring" loading="lazy"></a>
-      <div class="thumb thumb-video">
-        <video controls playsinline preload="metadata" poster="/assets/img/vw-bus/04-support-systems-2-poster.jpg">
-          <source src="/assets/img/vw-bus/04-support-systems-2.mp4" type="video/mp4">
-          Your browser can’t play this video.
-        </video>
-      </div>
+      <a class="thumb" href="/assets/img/vw-bus/04-support-systems-2.jpg"><img src="/assets/img/vw-bus/04-support-systems-2.jpg" alt="Welding at the workbench in a welding helmet, leather apron and gloves" loading="lazy"></a>
       <a class="thumb" href="/assets/img/vw-bus/04-support-systems-3.jpg"><img src="/assets/img/vw-bus/04-support-systems-3.jpg" alt="Low-voltage fuse block, circuit breaker and wiring mounted on a panel in the bus" loading="lazy"></a>
     </div>
   </div>
