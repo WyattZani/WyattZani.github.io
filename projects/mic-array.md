@@ -28,14 +28,8 @@ permalink: /projects/mic-array/
 </section>
 
 <!-- ============ ARRAY GEOMETRY ============ -->
-<section class="build-step">
+<section class="build-step text-only">
   <h2>Array shape and spacing</h2>
-  <div class="step-media">
-    <figure class="schematic">
-      <a class="thumb" href="/assets/img/mic-array/array-geometry.svg"><img src="/assets/img/mic-array/array-geometry.svg" alt="Diagram of four microphones at the corners of a square with a 5 cm diagonal and 3.54 cm sides" loading="lazy"></a>
-      <figcaption>Array layout, with a 5 cm diagonal.</figcaption>
-    </figure>
-  </div>
   <div class="step-text">
     <!-- Array geometry text -->
     <p>The shape of the array was the most fundamental decision, because TDoA depends directly on where the microphones sit relative to each other. The speaker’s horizontal angle matters most, so I kept all four microphones in one plane rather than taking on the added complexity of a 3D layout [1]. Two microphones can find an angle but can’t tell which side of their axis a sound came from. Three resolve that, and four improve position precision [2] without adding much mathematical or geometric complexity.</p>
