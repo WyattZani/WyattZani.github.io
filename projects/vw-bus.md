@@ -5,4 +5,5 @@ project_id: vw-bus
 permalink: /projects/vw-bus/
 ---
 
-<!-- Content for this project page goes here. -->
+<!-- Intro paragraph: type it inside the <p> tags below. -->
+<p class="lead"></p>
