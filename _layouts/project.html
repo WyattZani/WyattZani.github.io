@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body class="project-page">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="page-bar">
+      <nav class="topnav" aria-label="Site">
+        <a class="topnav-name" href="{{ '/' | relative_url }}">{{ site.username }}</a>
+        <div class="topnav-links">
+          <a href="{{ '/#projects' | relative_url }}">All projects</a>
+          <a href="{{ '/#contact' | relative_url }}">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main id="content" class="page-main">
+      <p class="page-back"><a href="{{ '/#projects' | relative_url }}">← Back to projects</a></p>
+      <h1 class="page-title">{{ page.title }}</h1>
+      <div class="page-content">
+        {{ content }}
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
