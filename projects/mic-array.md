@@ -9,6 +9,7 @@ permalink: /projects/mic-array/
 <div class="page-intro">
   <p class="lead">A four-microphone square array that tracks a person speaking as they move around a room. Omnidirectional microphones, preamplifiers, a four-channel analog-to-digital converter (ADC) and a microcontroller work together to locate the speaker using time difference of arrival (TDoA): the tiny delays between when a sound reaches each microphone.</p>
   <p>This is an ongoing project. This page summarizes the design decisions so far and the reasoning behind them, and some parts and values may change as the design develops.</p>
+  <p class="report-link"><a href="/assets/docs/working-technical-report.pdf">Read the full working technical report (PDF)</a></p>
 </div>
 
 <!-- ============ SYSTEM OVERVIEW ============ -->
@@ -88,6 +89,28 @@ permalink: /projects/mic-array/
     <p>For the microcontroller, I chose the ESP32-S2-WROVER. Its clock speed of up to 240 MHz leaves room to process the ADC data quickly on the board [7], and it’s readily available for free to Northeastern students.</p>
     <p>The ESP32-S2 needs 3.0–3.6 V [7] and the ADC’s digital supply accepts 2.7–3.6 V [6]. Since the ESP32-S2 can’t run from the 2.8 V analog rail, a separate 3.3 V rail powers both, comfortably inside each range.</p>
     <p>The microcontroller supplies the ADC’s clock input and talks to it over SPI (clock, MISO, MOSI and chip select), and the ADC signals it through a data-ready interrupt whenever new samples are available. The ESP32-S2 can map each of these connections to any of its GPIO pins [7], which keeps the board layout flexible.</p>
+  </div>
+</section>
+
+<!-- ============ TESTING ============ -->
+<section class="build-step text-only">
+  <h2>Testing: microphone sensitivity</h2>
+  <div class="step-text">
+    <!-- Testing text -->
+    <p>The first step in building the project is designing a small PCB for just the microphone and its power supply. The IM73A135V01 can’t easily be connected to a breadboard or protoboard, so a breakout board makes it possible to test each microphone on its own.</p>
+    <p>The first test checks the microphone’s sensitivity. The datasheet advertises 12.6 mV/Pa rms (−38 dBV) with a tolerance of −37 to −39 dBV [5], and a microphone far outside that range would send poor data to the microcontroller. The test plays a 94 dB SPL tone at 1 kHz, which is exactly 1 Pa of pressure and the frequency the sensitivity is specified at, then measures the peak-to-peak amplitude of the microphone’s differential output on an oscilloscope. The expected outputs across the tolerance range are:</p>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th scope="col"></th><th scope="col">Sensitivity (dBV)</th><th scope="col">Sensitivity (mV/Pa)</th><th scope="col">Expected output (mVpp)</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Min</th><td>−39</td><td>11.2</td><td>31.7</td></tr>
+          <tr><th scope="row">Typical</th><td>−38</td><td>12.6</td><td>35.6</td></tr>
+          <tr><th scope="row">Max</th><td>−37</td><td>14.1</td><td>40.0</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
